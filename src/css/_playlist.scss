@@ -1,0 +1,51 @@
+.play-heading {
+    font-family: poppins;
+    font-size: 48px;
+    background: -webkit-linear-gradient(#EE0979, #FF6A00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+
+.title-of-playlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-50 {
+    font-family: poppins;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.rock-ballads {
+    font-family: poppins;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.play-btn {
+    background: -webkit-linear-gradient(#EE0979, #FF6A00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.songs-playtime {
+    font-family: poppins light;
+    font-size: 12px;
+}
+
+.listen-all {
+    width: 325px;
+    height: 60px;
+    border-radius: 70px;
+    border-color: #EE0979;
+    background-color: white;
+    color: #EE0979;
+    font-family: poppins;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+}

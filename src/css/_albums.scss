@@ -1,0 +1,74 @@
+.albums-heading {
+    font-family: poppins;
+    font-size: 48px;
+    background: -webkit-linear-gradient(#EE0979, #FF6A00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heading-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.wiev-all-link {
+    text-decoration: none;
+    color: $darkPinkColor;
+    font-family: poppins;
+    font-size: 15px;
+}
+
+.albums-featured-heading {
+    font-size: 15px;
+    font-family: poppins;
+    font-weight: bold;
+}
+
+.album-cover-image {
+    border-radius: 10px;
+
+}
+
+.cover-section-wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.new-releases-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.new-releases-heading {
+    font-size: 15px;
+    font-family: poppins;
+    font-weight: bold;
+}
+
+.albums-songs-wrapper {
+    width: 325px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.songs-name {
+    font-family: poppins;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.artist-name {
+    font-family: poppins light;
+    font-size: 12px;
+}
+
+.number-of-songs {
+    font-family: poppins light;
+    font-size: 12px;
+}

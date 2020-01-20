@@ -1,0 +1,64 @@
+.cat-heading {
+    font-family: poppins;
+    font-size: 48px;
+    background: -webkit-linear-gradient(#EE0979, #FF6A00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cat-btn {
+    width: 325px;
+    height: 54px;
+    background-color: #D70060;
+    border: #D70060;
+    color: white;
+    font-family: poppins;
+    font-weight: bold;
+    border-radius: 10px;
+    padding-right: 205px;
+}
+
+.blues {
+    background-color: $redOrangeColor;
+    color: white;
+}
+
+.clasical {
+    background-color: $orangeColor;
+    color: white;
+}
+.country {
+    background-color: $yellowColor;
+    color: white;
+}
+
+.dance {
+    background-color: $lightGreenColor;
+    color: white;
+}
+.electronic {
+    background-color: $darkGreenColor;
+    color: white;
+}
+.hip-hop {
+    background-color: $mediumBlueColor;
+    color: white;
+}
+.industrial {
+    background-color: $darkBlueColor;
+    color: white;
+}
+
+.fitness {
+    background-color: $lightBlueColor;
+    color: white;
+}
+
+.btn-wrapper {
+    display: grid;
+    grid-template-rows: 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1fr;
+}
+
+.dropdown-content {
+    
+}
