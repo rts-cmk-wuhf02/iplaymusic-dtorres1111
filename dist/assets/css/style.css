@@ -147,7 +147,8 @@ body {
   font-size: 48px;
   background: -webkit-linear-gradient(#EE0979, #FF6A00);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  -webkit-text-fill-color: transparent;
+  z-index: 20; }
 
 .title-of-playlist {
   display: flex;
@@ -158,12 +159,14 @@ body {
 .top-50 {
   font-family: poppins;
   font-size: 20px;
-  font-weight: bold; }
+  font-weight: bold;
+  z-index: 30; }
 
 .rock-ballads {
   font-family: poppins;
   font-size: 20px;
-  font-weight: bold; }
+  font-weight: bold;
+  z-index: 30; }
 
 .play-btn {
   background: -webkit-linear-gradient(#EE0979, #FF6A00);
@@ -171,7 +174,7 @@ body {
   -webkit-text-fill-color: transparent; }
 
 .songs-playtime {
-  font-family: poppins light;
+  font-family: 'Poppins', sans-serif;
   font-size: 12px; }
 
 .listen-all {
@@ -185,6 +188,15 @@ body {
   font-size: 20px;
   font-weight: bold;
   margin-top: 25px; }
+
+.artist-name {
+  font-family: 'Poppins', sans-serif; }
+
+.sound-wave {
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+  position: fixed; }
 
 .albums-heading {
   font-family: poppins;
@@ -241,11 +253,11 @@ body {
   font-weight: bold; }
 
 .artist-name {
-  font-family: poppins light;
+  font-family: 'Poppins', sans-serif;
   font-size: 12px; }
 
 .number-of-songs {
-  font-family: poppins light;
+  font-family: 'Poppins', sans-serif;
   font-size: 12px; }
 
 .albumsdetail-heading {
@@ -254,6 +266,69 @@ body {
   background: -webkit-linear-gradient(#EE0979, #FF6A00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
+
+.backgr-albumsdetail-img {
+  position: fixed;
+  bottom: 10px; }
+
+.head-test {
+  position: fixed;
+  top: 100px;
+  color: white;
+  margin-left: 20px; }
+
+.albums-detail-songs-wrapper {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 20;
+  background-color: white; }
+
+.play-wrapper {
+  width: 100%;
+  height: 270px;
+  background-color: white;
+  position: fixed;
+  bottom: 0px; }
+
+.twelve-songs {
+  position: fixed;
+  top: 160px;
+  color: white;
+  margin-left: 20px; }
+
+.genres-hashtag {
+  position: fixed;
+  top: 280px;
+  color: white;
+  margin-left: 20px; }
+
+.details-btn-wrapper {
+  display: flex;
+  position: fixed;
+  top: 310px;
+  margin-left: 20px; }
+
+.country-btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: #FF1168;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin-right: 10px; }
+
+.country-road-btn {
+  width: 140px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: #FF1168;
+  color: white;
+  font-family: 'Poppins', sans-serif; }
 
 .player-main {
   margin: 0;

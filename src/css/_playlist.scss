@@ -4,6 +4,7 @@
     background: -webkit-linear-gradient(#EE0979, #FF6A00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    z-index: 20;
 } 
 
 .title-of-playlist {
@@ -17,6 +18,7 @@
     font-family: poppins;
     font-size: 20px;
     font-weight: bold;
+    z-index: 30;
 
 }
 
@@ -24,6 +26,7 @@
     font-family: poppins;
     font-size: 20px;
     font-weight: bold;
+    z-index: 30;
 }
 
 .play-btn {
@@ -33,7 +36,7 @@
 }
 
 .songs-playtime {
-    font-family: poppins light;
+    font-family: 'Poppins', sans-serif;
     font-size: 12px;
 }
 
@@ -48,4 +51,15 @@
     font-size: 20px;
     font-weight: bold;
     margin-top: 25px;
+}
+
+.artist-name {
+    font-family: 'Poppins', sans-serif;
+}
+
+.sound-wave {
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    position: fixed;
 }

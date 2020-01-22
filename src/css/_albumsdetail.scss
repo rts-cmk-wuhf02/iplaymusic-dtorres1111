@@ -5,3 +5,76 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.backgr-albumsdetail-img {
+    position: fixed;
+    bottom: 10px;
+}
+
+.head-test {
+    position: fixed;
+    top: 100px;
+    color: white;
+    margin-left: 20px;
+}
+
+.albums-detail-songs-wrapper {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 20;
+    background-color: white;
+}
+
+.play-wrapper {
+    width: 100%;
+    height: 270px;
+    background-color: white;
+    position: fixed;
+    bottom: 0px;
+}
+
+.twelve-songs {
+    position: fixed;
+    top: 160px;
+    color: white;
+    margin-left: 20px;
+}
+
+.genres-hashtag {
+    position: fixed;
+    top: 280px;
+    color: white;
+    margin-left: 20px;
+}
+
+.details-btn-wrapper {
+    display: flex;
+    position: fixed;
+    top: 310px;
+    margin-left: 20px;
+}
+
+.country-btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #FF1168;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 10px;
+}
+
+.country-road-btn {
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #FF1168;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
