@@ -1,63 +1,61 @@
-<%- include ('../partials/head.ejs') -%>
-<%- include ('../partials/header.ejs') -%> 
+<%- include ('../partials/head.ejs') -%> <%- include ('../partials/header.ejs')
+-%>
 
-    <main>
-        <h1 class="albums-heading">All Albums</h1>
-        <div class="heading-wrapper">
-            <h2 class="albums-featured-heading">Featured Albums</h2>
-            <div class="wiev-all-link">Wiev All</div>
-        </div>
-        <section class="cover-section-wrapper">
-            <img class="album-cover-image" src="http://via.placeholder.com/130x130" alt="">
-            <img class="album-cover-image" src="http://via.placeholder.com/130x130" alt="">
-        </section>
-        <div class="new-releases-wrapper">
-            <h2 class="new-releases-heading">New Releases</h2>
-            <div class="wiev-all-link">Wiev All</div>
-        </div>
-        
-            <div class="albums-songs-wrapper">
-                <img class="album-cover-image" src="http://via.placeholder.com/50x50" alt="">
-                    <div class="artist-song-wrapper">
-                        <div class="artist-name-wrapper">
-                            <p class="songs-name">Old Town Road</p>
-                            <p class="artist-name">Billy Ray Cyrus</p>
-                        </div>
-                    </div>
-                <div class="number-of-songs">12 Songs</div>
-            </div>
-            <div class="albums-songs-wrapper">
-                <img class="album-cover-image" src="http://via.placeholder.com/50x50" alt="">
-                    <div class="artist-song-wrapper">
-                        <div class="artist-name-wrapper">
-                            <p class="songs-name">Old Town Road</p>
-                            <p class="artist-name">Billy Ray Cyrus</p>
-                        </div>
-                    </div>
-                <div class="number-of-songs">12 Songs</div>
-            </div>
-            <div class="albums-songs-wrapper">
-                <img class="album-cover-image" src="http://via.placeholder.com/50x50" alt="">
-                    <div class="artist-song-wrapper">
-                        <div class="artist-name-wrapper">
-                            <p class="songs-name">Old Town Road</p>
-                            <p class="artist-name">Billy Ray Cyrus</p>
-                        </div>
-                    </div>
-                <div class="number-of-songs">12 Songs</div>
-            </div>
-            <div class="albums-songs-wrapper">
-                <img class="album-cover-image" src="http://via.placeholder.com/50x50" alt="">
-                    <div class="artist-song-wrapper">
-                        <div class="artist-name-wrapper">
-                            <p class="songs-name">Old Town Road</p>
-                            <p class="artist-name">Billy Ray Cyrus</p>
-                        </div>
-                    </div>
-                <div class="number-of-songs">12 Songs</div>
-            </div>
-     
-    </main>
+<main>
+  <h1 class="albums-heading">All Albums</h1>
+  <div class="heading-wrapper">
+    <h2 class="albums-featured-heading">Featured Albums</h2>
+    <div class="wiev-all-link">Wiev All</div>
+  </div>
 
-<%- include ('../partials/footer.ejs') -%>
-<%- include ('../partials/after-footer.ejs') -%> 
+  <section id="test-two" class="cover-section-wrapper main-carousel">
+    <!--template albums-placeholder-->
+  </section>
+
+  <div class="new-releases-wrapper">
+    <h2 class="new-releases-heading">New Releases</h2>
+    <div class="wiev-all-link">Wiev All</div>
+  </div>
+  <div id="test-three" class="albums-songs-wrapper">
+    <!--bottoms-albums-placeholder-->
+  </div>
+  <!--  <div class="main-carousel">
+    <div class="carousel-cell">...</div>
+    <div class="carousel-cell">...</div>
+    <div class="carousel-cell">...</div>
+    ...
+  </div> -->
+</main>
+
+<script src="/assets/javascript/get-spotify-token.js"></script>
+<script src="/assets/javascript/get-albums.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="/assets/javascript/flkty.js"></script>
+
+<%- include ('../partials/footer.ejs') -%> <%- include
+('../partials/after-footer.ejs') -%>
+
+<template id="albums-placeholder">
+  <img
+    id="album-test"
+    class="album-cover-image-top carousel-cell"
+    src="http://via.placeholder.com/130x130"
+    alt=""
+  />
+</template>
+
+<template id="bottoms-albums-placeholder">
+  <div class="test">
+    <img
+      id="bottom-album-test"
+      class="album-cover-image"
+      src="http://via.placeholder.com/50x50"
+      alt=""
+    />
+    <div class="artist-name-wrapper">
+      <p id="songs-name" class="songs-name">Old Town Road</p>
+      <p id="artist-name" class="artist-name">Billy Ray Cyrus</p>
+    </div>
+    <p id="number-of-songs" class="number-of-songs">12 Songs</p>
+  </div>
+</template>

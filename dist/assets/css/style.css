@@ -1,26 +1,73 @@
+/* Imports */
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+/* Base */
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  background-color: #ffffff;
+  color: #4d1f48;
+  transition: ease-in-out 1s; }
+
+html[data-theme="dark"] {
+  background-color: #4d1f48;
+  color: #ffffff;
+  transition: ease-in-out 1s; }
+
+html[data-theme="light"] {
+  background-color: #ffffff;
+  color: #4d1f48;
+  transition: ease-in-out 1s; }
+
+footer[data-theme="dark"] {
+  background-color: #4d1f48;
+  color: #ffffff;
+  transition: ease-in-out 1s; }
+
+footer[data-theme="light"] {
+  background-color: #ffffff;
+  color: #4d1f48;
+  transition: ease-in-out 1s; }
+
+header[data-theme="dark"] {
+  background-color: #4d1f48;
+  color: #ffffff;
+  transition: ease-in-out 1s; }
+
+header[data-theme="light"] {
+  background-color: #ffffff;
+  color: #4d1f48;
+  transition: ease-in-out 1s; }
+
+body {
+  font-family: "Poppins", sans-serif; }
+
 main {
   margin: 0 5%;
   padding-top: 100px;
   padding-bottom: 100px; }
 
 body {
-  /*   background-color: currentColor; */ }
+  /* background-color: var(--background-color); */ }
 
 .feat-heading {
   font-family: poppins;
   font-size: 48px;
-  background: -webkit-linear-gradient(#EE0979, #FF6A00);
+  background: -webkit-linear-gradient(#ee0979, #ff6a00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
 .cover-placeholder {
-  border-radius: 10px;
-  margin-bottom: 30px; }
+  border-radius: 10px; }
+
+.placeholder-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  grid-gap: 1rem; }
 
 .header-wrapper {
   position: fixed;
-  background-color: white;
   width: 100%;
   height: 70px;
   display: flex;
@@ -39,19 +86,8 @@ body {
 .fas {
   width: 20px; }
 
-/* Imports */
-/* Base */
-* {
-  margin: 0;
-  padding: 0; }
-
-body {
-  font-family: 'Poppins', sans-serif; }
-
 .footer-wrapper {
   position: fixed;
-  background-color: white;
-  /*  background-color: currentColor; */
   bottom: 0px;
   width: 100%;
   height: 65px;
@@ -63,28 +99,28 @@ body {
   box-shadow: -1px 1px 37px -1px rgba(0, 0, 0, 0.75); }
 
 .sampling-log {
-  background: -webkit-linear-gradient(#EE0979, #FF6A00);
+  background: -webkit-linear-gradient(#ee0979, #ff6a00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
 .microphone-logo {
-  background: -webkit-linear-gradient(#EE0979, #FF6A00);
+  background: -webkit-linear-gradient(#ee0979, #ff6a00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
 .bullseye-logo {
-  background: -webkit-linear-gradient(#EE0979, #FF6A00);
+  background: -webkit-linear-gradient(#ee0979, #ff6a00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: fit-content; }
 
 .adjust-logo {
-  background: -webkit-linear-gradient(#EE0979, #FF6A00);
+  background: -webkit-linear-gradient(#ee0979, #ff6a00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
 .settings-logo {
-  background: -webkit-linear-gradient(#EE0979, #FF6A00);
+  background: -webkit-linear-gradient(#ee0979, #ff6a00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
@@ -201,7 +237,7 @@ body {
 .albums-heading {
   font-family: poppins;
   font-size: 48px;
-  background: -webkit-linear-gradient(#EE0979, #FF6A00);
+  background: -webkit-linear-gradient(#ee0979, #ff6a00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
@@ -222,12 +258,18 @@ body {
   font-weight: bold; }
 
 .album-cover-image {
-  border-radius: 10px; }
+  border-radius: 10px;
+  width: 50px; }
 
-.cover-section-wrapper {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between; }
+.album-cover-image-top {
+  border-radius: 10px;
+  width: 130px;
+  transition: ease-out 500ms; }
+
+.album-cover-image-top:hover {
+  border-radius: 10px;
+  width: 140px;
+  transition: ease-in 500ms; }
 
 .new-releases-wrapper {
   display: flex;
@@ -239,13 +281,19 @@ body {
   font-family: poppins;
   font-weight: bold; }
 
-.albums-songs-wrapper {
+/* .albums-songs-wrapper {
   width: 325px;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 20px; }
+  margin-top: 20px;
+} */
+.test {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px; }
 
 .songs-name {
   font-family: poppins;
@@ -253,12 +301,20 @@ body {
   font-weight: bold; }
 
 .artist-name {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 12px; }
 
 .number-of-songs {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 12px; }
+
+.artist-name-wrapper {
+  text-align: center; }
+
+.cover-section-wrapper {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem; */ }
 
 .albumsdetail-heading {
   font-family: poppins;
