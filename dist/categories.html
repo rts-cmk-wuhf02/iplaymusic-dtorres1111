@@ -19,27 +19,27 @@
   </head>
   <body></body>
 </html>
-<header class="header-wrapper" data-theme="light">
-  <i class="fas fa-angle-left left-arrow-logo"></i>
-  <h1 class="featured-heading">Featured</h1>
-  <i class="fas fa-search search-logo"></i>
+ <header class="header-wrapper" data-theme="light">
+  <i id="backBtn" class="fas fa-angle-left left-arrow-logo"></i>
+  <h1 id="heading" class="featured-heading">Featured</h1>
+  <i id="searchLoop" class="fas fa-search search-logo"></i>
 </header>
- 
+<script src="/assets/javascript/header.js"></script>
 
-    <main>
-        <h1 class="cat-heading">Categories</h1>
-            <div class="btn-wrapper">
-                <button class="cat-btn alternativ">Alternative</button>
-                <button class="cat-btn blues">Blues</button>
-                <button class="cat-btn clasical">Clasical</button>
-                <button class="cat-btn country">Country</button>
-                <button class="cat-btn dance">Dance</button>
-                <button class="cat-btn electronic">Electronic</button>
-                <button class="cat-btn fitness">Fitness &amp Workout</button>
-                <button class="cat-btn hip-hop">Hip Hop/Rap</button>
-                <button class="cat-btn industrial">Industrial</button>
-            </div>
-           <!--  <div id="dropdown" class="dropdown-content">
+<main>
+  <h1 class="cat-heading">Categories</h1>
+  <div class="btn-wrapper">
+    <button class="cat-btn alternativ">Alternative</button>
+    <button class="cat-btn blues">Blues</button>
+    <button class="cat-btn clasical">Clasical</button>
+    <button class="cat-btn country">Country</button>
+    <button class="cat-btn dance">Dance</button>
+    <button class="cat-btn electronic">Electronic</button>
+    <button class="cat-btn fitness">Fitness &amp Workout</button>
+    <button class="cat-btn hip-hop">Hip Hop/Rap</button>
+    <button class="cat-btn industrial">Industrial</button>
+  </div>
+  <!--  <div id="dropdown" class="dropdown-content">
                 <a href="#">Acoustic Blues</a>
                 <a href="#">Blues Rock</a>
                 <a href="#">Canadian blues</a>
@@ -48,18 +48,22 @@
                 <a href="#">Soul blues</a>
                 <a href="#">Swamp blues</a>
             </div> -->
-    </main>
-<script src="/src/javascript/categories.js"></script>
+</main>
 <footer class="footer-wrapper" data-theme="light">
-  <i class="fab fa-creative-commons-sampling sampling-log"></i>
-  <i class="fas fa-microphone-alt microphone-logo"></i>
-  <i class="fas fa-bullseye bullseye-logo fa-3x"></i>
+  <a href="/albums.html">
+    <i class="fab fa-creative-commons-sampling sampling-log"></i>
+  </a>
+  <a href="/playlist.html">
+    <i class="fas fa-microphone-alt microphone-logo"></i>
+  </a>
+  <a href="/index.html"><i class="fas fa-bullseye bullseye-logo fa-3x"></i></a>
   <i id="themeBtn" class="fas fa-adjust adjust-logo"></i>
-  <i class="fas fa-folder-open settings-logo"></i>
+  <a href="/categories.html">
+    <i class="fas fa-folder-open settings-logo"></i>
+  </a>
 </footer>
-
+<script src="/assets/javascript/categories.js"></script>
 <script src="/assets/javascript/chancetheme.js"></script>
 </body>
 </html>
 
- 

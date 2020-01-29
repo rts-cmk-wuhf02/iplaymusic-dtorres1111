@@ -20,10 +20,11 @@
   <body></body>
 </html>
  <header class="header-wrapper" data-theme="light">
-  <i class="fas fa-angle-left left-arrow-logo"></i>
-  <h1 class="featured-heading">Featured</h1>
-  <i class="fas fa-search search-logo"></i>
+  <i id="backBtn" class="fas fa-angle-left left-arrow-logo"></i>
+  <h1 id="heading" class="featured-heading">Featured</h1>
+  <i id="searchLoop" class="fas fa-search search-logo"></i>
 </header>
+<script src="/assets/javascript/header.js"></script>
 
 <main>
   <h1 class="feat-heading">Featured</h1>
@@ -36,14 +37,19 @@
 <script src="/assets/javascript/index.js"></script>
 
 <footer class="footer-wrapper" data-theme="light">
-  <i class="fab fa-creative-commons-sampling sampling-log"></i>
-  <i class="fas fa-microphone-alt microphone-logo"></i>
-  <i class="fas fa-bullseye bullseye-logo fa-3x"></i>
+  <a href="/albums.html">
+    <i class="fab fa-creative-commons-sampling sampling-log"></i>
+  </a>
+  <a href="/playlist.html">
+    <i class="fas fa-microphone-alt microphone-logo"></i>
+  </a>
+  <a href="/index.html"><i class="fas fa-bullseye bullseye-logo fa-3x"></i></a>
   <i id="themeBtn" class="fas fa-adjust adjust-logo"></i>
-  <i class="fas fa-folder-open settings-logo"></i>
+  <a href="/categories.html">
+    <i class="fas fa-folder-open settings-logo"></i>
+  </a>
 </footer>
- 
-<script src="/assets/javascript/chancetheme.js"></script>
+ <script src="/assets/javascript/chancetheme.js"></script>
 </body>
 </html>
 

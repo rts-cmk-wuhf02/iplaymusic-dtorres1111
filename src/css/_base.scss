@@ -33,7 +33,7 @@ footer[data-theme="light"] {
   color: $currentColor;
   transition: ease-in-out 1s;
 }
-header[data-theme="dark"] {
+/* header[data-theme="dark"] {
   background-color: $currentColor;
   color: $secondaryColor;
   transition: ease-in-out 1s;
@@ -42,7 +42,7 @@ header[data-theme="light"] {
   background-color: $secondaryColor;
   color: $currentColor;
   transition: ease-in-out 1s;
-}
+} */
 
 body {
   font-family: "Poppins", sans-serif;

@@ -9,12 +9,12 @@ document.addEventListener("DOMContentLoaded", function() {
       document.documentElement.setAttribute("data-theme", "dark");
       document.querySelector("footer").setAttribute("data-theme", "dark");
       document.querySelector("body").setAttribute("data-theme", "dark");
-      document.querySelector("header").setAttribute("data-theme", "dark");
+      /*   document.querySelector("header").setAttribute("data-theme", "dark"); */
       localStorage.setItem("current-theme", "light");
     } else {
       document.documentElement.setAttribute("data-theme", "light");
       document.querySelector("footer").setAttribute("data-theme", "light");
-      document.querySelector("header").setAttribute("data-theme", "light");
+      /* document.querySelector("header").setAttribute("data-theme", "light"); */
       localStorage.setItem("current-theme", "light");
     }
   });
